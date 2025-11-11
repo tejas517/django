@@ -1,0 +1,37 @@
+<!--
+filter function are those keyword which we can use on string
+
+1.lower	Converts string to lowercase	
+2.upper Converts string to uppercase	
+3.length	Returns the length of the variable	
+4.default	Fallback value if variable is empty or undefined	
+5.date	Formats date object	`{{ user.date_joined
+6.truncatechars	Truncates after n characters	
+7.slice	Returns a slice of a list or string	
+8.safe	Marks string as safe HTML	
+9.escape	Escapes HTML special characters	
+10.yesno	Converts boolean to custom string	
+11.add	Adds a value (number or string)	
+12.capfirst	Capitalizes the first character	
+13.center	Centers the string in a field of given width	
+14.cut	Remove substring
+15.title	Converts to title case
+16.wordcount	Count words in string
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--To use filter w eneed always a variabek whcihw ecraete in views.py and use 
+    in Html file using {{variablebame | upper}}
+    . some filter are used on text and some on number
+    -->
+   <h1>{{ name|upper }}</h1> 
+   <h1>{{ name|capfirst }}</h1>
+</body>
+</html>

@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="{% static 'styl3.css' %}">
+    <title>Document</title>
+   
+</head>
+<body>
+    <!------------------------------------images/css file----------------->
+    <!--
+    create static folder put all images and .css file over there
+    to connect Html file with css file use link tag
+
+    Steps to give image on screen:
+    1. put all images in static folder
+    2. use {% load static %} at top to connect with static folder
+    3. use img tag is used - <img src="{% static 'do.jpeg' %}">
+    
+
+    Steps to create css file and connect with it :
+    #1. put/create .css file in static folder
+    #2. use {% load static %} at top
+    #3. use link tag to connect Html and css file
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    -->
+    <!--Blog web page is  web page where we code write aboyt one topic share info, images of it-->
+   <!-----------------------------Blog Food web page------------------> 
+   <img src="{% static 'do.jpeg' %}" width="100" height="60" class="img1">
+   <ul>
+    <!--this tag is used to create navgation bar. 
+    Navigation bar is at top of every website lie, Home, signup, login ..
+    li tag give list
+    a tag go to new page 
+    href="" here we link of next page 
+    src is source to gie image name
+    -->
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About us</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Sign up</a></li>
+   </ul>
+   <br><!--br is break tag it make goes to next line-->
+   <br>
+   <br>
+   <br>
+   <br>
+   <img src="{% static 'do.jpeg ' %}" width="300" height="300" class="img2">
+   <img src="{% static 'pizza.jpg ' %}" width="300" height="300" class="img3">
+   <img src="{% static 'fries (1).jpg ' %}" width="300" height="300" class="img4">
+<h1 class="i1">Food Blog</h1>
+<p class="p1">
+Lorem ipsum is a dummy or placeholder text 
+commonly used in graphic design, publishing,
+ and web development. Its purpose is to permit 
+a page layout to be designed, independently of the 
+copy that will subsequently populate it, or to demonstrate 
+various fonts of a typeface without meaningful text that 
+could be distracting.
+    
+</p>
+
+<button class="b1">More Details</button>
+</body>
+</html>

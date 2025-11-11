@@ -1,0 +1,56 @@
+ul li {
+display:inline; /* put tags in one line  */
+margin-left:100px; /* gives space from left side */
+color:white; /* for textcolor use color, for size font-szie, for family font-family, for italic use font-style */
+font-size:30px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-style:italic;
+
+}
+body{
+    background-color: rgb(206, 152, 204);
+}
+.img1, ul{
+    display:inline;
+}
+ul li a {
+    color:white;
+    text-decoration:none; /* text-decoration:urderline gives line to text, if we use none removes line */
+}
+.img2, .img3, .img4{
+    margin-left:140px;
+}
+.i1{
+    color: blue;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-style: italic;
+}
+.p1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    width:1200px; /* this is so that text can occupy 600px space */
+    height:300px;
+    line-height:60px;/* space between lines so that it looks good */
+    margin-left:160px;/* space from left side */
+}
+
+/* we always give .classname when we write in style eg : .p1 */
+.b1{
+    background-color: rgb(56, 56, 150);
+    color:white;
+    font-size:20px ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:italic;
+    width:200px;
+    margin-left:660px; /* space from left side */
+    height:60px; /* for incraesing the size of button */
+    border-radius:60px; /* it makes any line rounded. it make line around button rounded in shape 
+    which make button becomes round in shape. more the oixle number more rounded it is */
+}
+/* wherever text comes we can use text properties like color, font-size, font-family, font style over 
+
+*/
