@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        if tag for tag
+        </title>
+    </head>
+    <body>
+
+<!--if tag
+if tag is similar to if condition which is we do in python.-- in python it is called if condition 
+and in Html django we call  if tag. if tag is given by django in Html. if we do not use djnago and use only then this tag does not come
+if tag also has condition if condition works then next thing will happen. if condition does not hapoen 
+then else will happen
+
+syntax :
+{% if condition %}
+next part
+{% else %}
+next part
+
+{% endif %}
+syntax for multip;e condition in if tag :
+{% if condition %}
+next part
+{% elif condition %}
+next part
+{% elif condition %}
+next part
+{% else %}
+next part
+{% endif %}
+
+
+Note : we always create variable in python. We cannot create variable in Html. so we get from python views.py file.
+whenw  ewrite here variable in Html we write like this 
+{{variblename}}
+
+-------------------------------------operators in Html same as python----------------------------------
+#1. Arthmetic sign : +, -, *, /(divide two number give answer quotient), %(modulus or modulo) it divides two numbers and give remainder
+#2. Compairson sign : <, >, <=, >=, ==, !=(not equal)
+#3. Logical operator : or(two conditions either of two conditions should work), and(both conditiosn should work),
+not
+#4. Assignmnet operator : +=, -=, *=, /=, %=
+
+
+Example 1 :   create one variable marks and store marks in that in views.py. then ise if tag in html
+if marks>18 then print you can get license else print you cannot get license
+    -->
+
+{% if marks > 18 %}
+  <h1>You can drive</h1>
+{% else %}
+  <h1>You cannot drive</h1>
+{% endif %}
+
+<!-- Example 2: Grading system -->
+{% if marks >= 90 %}
+  <h2>Grade A</h2>
+{% elif marks >= 80 %}
+  <h2>Grade B</h2>
+{% elif marks >= 70 %}
+  <h2>Grade C</h2>
+{% else %}
+  <h2>Below Grade C</h2>
+{% endif %}
+
+
+<!----------------------for tag-
+for tag mean same as for loop in python.
+for ag is always used to repeat code on list. if there is no list and we want to repeat
+over and over then we cannot us for tag
+
+syntax :
+
+{% for variablename in listname %}
+
+{% endfor %}
+
+---------------------->
+
+<!--use for loop on sibject list which is in views.py and print it on screen-->
+{% for j in subjects %}
+<h2>{{j}}</h2>
+
+{% endfor %}
+{% if id>18 %}
+<p>
+  exellent
+</p>
+{% else %}
+<p>
+  good
+</p>
+    </body>
+</html>
